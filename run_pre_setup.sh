@@ -86,7 +86,7 @@ case "$response" in
 esac
 
 # Use rsync to copy the .ssh config file and specified files to the remote machine
-rsync -av ~/.ssh/config ~/.ssh/oc_gh ~/.ssh/oc-advai-gh ~/.ssh/hyperstack-trial-ssh_hyperstack.txt "$ssh_alias":~/.ssh/
+rsync -av ~/.ssh/config ~/.ssh/oc_personal_gh ~/.ssh/oc-advai-gh ~/.ssh/hyperstack-trial-ssh_hyperstack.txt "$ssh_alias":~/.ssh/
 
 # Provide feedback on the rsync operation
 if [[ $? -eq 0 ]]; then
